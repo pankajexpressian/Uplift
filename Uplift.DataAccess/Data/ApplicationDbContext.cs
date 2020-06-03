@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Uplift.Models;
 
 namespace Uplift.Web.DataAccess.Data
 {
@@ -12,5 +13,7 @@ namespace Uplift.Web.DataAccess.Data
             : base(options)
         {
         }
+
+        public IEnumerable<Category> Categories { get; set; }
     }
 }

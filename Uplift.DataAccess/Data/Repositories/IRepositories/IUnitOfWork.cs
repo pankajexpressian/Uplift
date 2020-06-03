@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Uplift.DataAccess.Data.Repositories.IRepositories
 {
-    interface IUnitOfWork
+    public interface IUnitOfWork:IDisposable
     {
+        ICategoryRepository Category { get; }
+        void Save();
     }
 }
