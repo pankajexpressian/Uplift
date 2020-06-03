@@ -14,6 +14,6 @@ namespace Uplift.Web.DataAccess.Data
         {
         }
 
-        public IEnumerable<Category> Categories { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }

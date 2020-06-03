@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200603133833_AddCategoryTable.cs" />
+    <Compile Remove="Migrations\20200603133833_AddCategoryTable.Designer.cs" />
+    <Compile Remove="Migrations\20200603134029_AddCategoryTable.cs" />
+    <Compile Remove="Migrations\20200603134029_AddCategoryTable.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.4" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
@@ -14,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="Data\Initializer\" />
-    <Folder Include="Migrations\" />
   </ItemGroup>
 
   <ItemGroup>
